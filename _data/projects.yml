@@ -1,0 +1,23 @@
+- name: Afrihealth Laboratory Software
+  url: http://afrihealth.com.ng
+  image: /img/projects/afrihealth/afrihealth.png
+  code: http://afrihealth.com.ng
+  description: An application used to manage the activities of a laboratory online.
+               A web application that allows users to schedule test hours online.
+  used:
+    - thing: Php
+    - thing: MySQL
+    - thing: HTML
+    - thing: CSS
+    - thing: Jquery
+
+- name: CRUD application
+  url: http://
+  code: https://github.com/netEmmanuel/studentResourcesClient
+  image: /img/projects/
+  description: I created this simple crud application to learn how to use Angular 4 and postgres 
+  used:
+  - thing: Javascript
+  - thing: Angular Material
+  - thing: Angular
+  - thing: PostgreSQL

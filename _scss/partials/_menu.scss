@@ -1,0 +1,134 @@
+navheader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 50px;
+    right: 50px;
+    width: 100%;
+    @include mobile {
+      top: 50px;
+      right: 20px;
+    } 
+}
+
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+  @include transition;
+  
+
+  .menu-line{
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: $grey;
+    @include transition;
+  }
+
+  &.close {
+    transform: rotate(180deg);
+
+    .menu-line{
+      //line 1 - Rotate
+      &:nth-child(1){
+        transform: rotate(45deg) translate(5px, 5px);
+      }  
+
+      //line 2 - Hide
+      &:nth-child(2){
+        opacity: 0;
+      }
+
+      //line 3 - Rotate
+      &:nth-child(3){
+        transform: rotate(-45deg) translate(7px, -6px);
+      } 
+    }
+  }
+}
+
+//Menu overlay
+.menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  opacity: 0.8;
+  visibility: hidden;
+
+  &.show{
+    visibility: visible;
+  }
+
+  &-left,
+  &-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    float: left;
+  }
+
+  &-right{
+    margin: 0;
+    padding: 0;
+    background: darken($black,3);
+    transform: translate3d(0, -100%, 0);
+    @include transition;
+
+    &.show{
+      transform: translate3d(0, 0, 0);
+    } 
+  }
+
+  .nav-list{
+    transform: translate3d(600px, 0, 0);
+    @include transition;
+
+    &.show{
+      // show from right
+      transform: translate3d(0, 0, 0);
+    } 
+  }
+  .nav-list{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: $white;
+    @include transition;
+
+    &:hover{
+      color: $purple;
+    }
+  }
+}
+
+@include mobile {
+ ul.menu-right.show{
+    // show from left
+    transform: translate3d(0, 0, 0);
+  }
+  .menu-right{
+    transform: translate3d(0%, -100, 0);
+  }
+ .menu .nav-list{
+  font-size: 1.2rem;
+   font-weight: 100;
+ }
+}
+
+// delay each nav list item by 0.2s
+@for $d from 1 to 6 {
+  .nav-list:nth-child(#{$d}){
+    transition-delay: $d*0.1s;
+  }
+}

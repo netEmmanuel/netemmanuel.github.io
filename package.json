@@ -1,0 +1,37 @@
+{
+  "name": "damilareemmanuel",
+  "version": "0.0.0",
+  "description": "Back-end software engineer focused on developing softwares to increase productivity &amp; user experiences.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp serve",
+    "build": "gulp build"
+  },
+  "author": "Damilare Emmanuel",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.23.6",
+    "eslint": "^5.3.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "3.9.0",
+    "gulp-eslint": "4.0.2",
+    "gulp-imagemin": "4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglify-es": "^1.0.4",
+    "lodash": "^4.17.5",
+    "uglify-es": "^3.3.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netEmmanuel/netemmanuel.github.io"
+  },
+  "homepage": "http://damilareemmanuel.com"
+}

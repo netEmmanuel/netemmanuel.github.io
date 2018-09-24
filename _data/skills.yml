@@ -1,0 +1,27 @@
+languages:
+  - item: JavaScript (ES6)
+  - item: C#
+  - item: Php
+  - item: Html, CSS/Sass
+  - item: Java
+  - item: SQL
+
+frameworks:
+  - item: Angular, React, Jquery
+  - item: Bootstrap
+  - item: Laravel
+  - item: Jekyll
+  - item: Node
+  - item: Wordpress
+  - item: Asp.Net Core
+  
+tools:
+  - item: Git
+  - item: Bash
+  - item: Gulp & Webpack
+  - item: Chrome DevTools
+  - item: Postman
+  - item: Docker
+
+design:
+  - item: Adobe XD

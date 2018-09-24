@@ -1,0 +1,188 @@
+.intro {
+  padding: 60px 90px;
+  // height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
+  @include weird-medium {
+    padding: 120px 70px;
+  }
+  @include phablet {
+    padding: 120px 50px;
+  }
+  @include mobile {
+    padding: 70px 50px;
+  }
+
+  &__hello, &__tagline {
+    font-size: 2.5rem;
+    @include desktop {
+      font-size: 2.25rem;
+    }
+    @include little-desktop {
+      font-size: 2.0rem;
+    }
+    @include tablet {
+      font-size: 2rem;
+    }
+    @include phablet {
+      font-size: 1.75rem;
+    }
+    @include small-mobile {
+      font-size: 1.5rem;
+    }
+    @include tiny-mobile {
+      font-size: 1.4rem;
+    }
+    .emoji {
+      width: 40px;
+      height: 40px;
+      @include desktop {
+        width: 35px;
+        height: 35px;
+      }
+      @include tablet {
+        width: 30px;
+        height: 30px;
+      }
+      @include small-mobile {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .introL{
+    display: flex;
+    flex-direction: column;
+  }
+  .headshot{
+    flex-direction: column;
+    // margin-top: 8vh;
+    @include little-desktop{
+      margin-top: 20vh;
+      // display: none;
+    }
+    @include desktop{
+      margin-top: 10vh;
+    }
+    @include thirteen{
+      margin-top: 10vh;
+    }
+    
+  }
+
+  img{
+    @include weird-medium {
+    display: none;
+    }
+    @include phablet {
+      display: none;
+    }
+    @include mobile {
+    display: none;
+    }
+    @include tablet{
+      display: none;
+    }
+  }
+
+    &__hello {
+      font-weight: 300;
+      .wave-hand {
+        background-image: url('../img/emojis/wave.png');
+        margin-left: 10px;
+        cursor: pointer;
+
+        &.animated {
+          animation-duration: 1s;
+          animation-fill-mode: both;
+        }
+        &.wave {
+          animation-name: wave;
+        }
+
+        @keyframes wave {
+          from {
+            transform: none;
+          }
+          15% {
+            transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+          }
+          30% {
+            transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+          }
+          45% {
+            transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+          }
+          60% {
+            transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+          }
+          75% {
+            transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+          }
+          to {
+            transform: none;
+          }
+        }
+      }
+    }
+    &__tagline {
+      font-weight: 300;
+      max-width: 700px;
+      .name {
+        font-weight: 700;
+      }
+      .rocket-up {
+        background-image: url('../img/emojis/rocket.png');
+        margin-left: 10px;
+      }
+     
+    }
+    &__contact {
+      font-size: 1.25rem;
+      font-weight: 400;
+      @include phablet {
+        font-size: 1rem;
+      }
+      @include mobile {
+       font-size: 0.7rem;
+      }
+      .emoji {
+        &.pointer {
+          background-image: url('../img/emojis/pointright.png');
+          width: 30px;
+          height: 30px;
+          margin: 0 5px;
+          vertical-align: text-bottom;
+          @include phablet {
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+        &.pointer:hover{
+          transform: translate3d(0, 5px, 0);
+          transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1),
+            transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
+        }
+      }
+      .highlight-link {
+        @include transition;
+        font-weight: 400;
+        text-decoration: none;
+        display: inline-block;
+        padding: 2px 3px;
+        text-decoration: none;
+        // box-shadow: inset 0 -3px 0 0 $purple;
+        &:hover {
+          box-shadow: inset 0 -33px 0 0 $purple;
+          color: $white;
+        }
+      }
+    }
+}
+
+

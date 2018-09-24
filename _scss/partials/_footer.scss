@@ -1,0 +1,67 @@
+.footer {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include desktop {
+    padding: 50px;
+  }
+  @include weird-medium {
+    display: block;
+  }
+  @include mobile {
+    padding: 50px 30px;
+  }
+  &__copyright {
+    font-weight: 700;
+    width: 200px;
+    @include weird-medium {
+      width: auto;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .top, .bottom {
+      @include weird-medium {
+        display: inline-block;
+      }
+      @include mobile {
+        display: block;
+      }
+    }
+    .emoji {
+      width: 20px;
+      height: 20px;
+      margin: 0 3px;
+      vertical-align: text-bottom;
+    }
+  }
+  &__links {
+    @include weird-medium {
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      color: $dark-grey !important;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 15px;
+      outline: none;
+      @include desktop {
+        margin: 0 10px;
+    }   
+    }
+    img {
+      width: 30px;
+        display: inline-block;   
+    }
+    img:hover,
+    img:focus{
+      filter: (100%);
+      @include transition();
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
