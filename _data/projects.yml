@@ -12,9 +12,9 @@
     - thing: Jquery
 
 - name: CRUD application
-  url: http://
+  url: https://angularstudentresource.netlify.com/
   code: https://github.com/netEmmanuel/studentResourcesClient
-  image: /img/projects/
+  image: /img/projects/StudentResources/angularCRUD.png
   description: I created this simple crud application to learn how to use Angular 4 and postgres 
   used:
   - thing: Javascript
