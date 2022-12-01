@@ -4,7 +4,7 @@ title: Oyelakin Damilare Emmanuel | Full Stack Software Engineer
 description: Software engineer focused on developing softwares to increase productivity &amp; improve user experiences.
 url: https://netemmanuel.github.io/
 baseurl: ""
-email: d.dammylarry@gmail.com
+email: 
 cover: https://netemmanuel.github.io/img/og.png
 logo: https://netemmanuel.github.io/emojis/technologist.png
 resume: https://netemmanuel.github.io//resume.pdf
@@ -12,7 +12,7 @@ social:
   - title: email
     url: mailto:d.dammylarry@gmail.com
   - title: twitter
-    url: https://twitter.com/echo_dammy
+    url: https://twitter.com/
   - title: medium
     url: https://medium.com/@d.dammylarry
   - title: stackoverflow
