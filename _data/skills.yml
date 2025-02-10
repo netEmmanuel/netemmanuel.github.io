@@ -2,18 +2,17 @@ languages:
   - item: JavaScript (ES6)
   - item: C#
   - item: Php
-  - item: Html, CSS/Sass
+  - item: HCL
   - item: Java
-  - item: SQL
+  - item: Python
+  
 
 frameworks:
   - item: Angular, React, Jquery
-  - item: Bootstrap
+  - item: GCP
   - item: Laravel
-  - item: Jekyll
   - item: Node
-  - item: Wordpress
-  - item: Asp.Net Core
+  - item: Azure
   
 tools:
   - item: Git
